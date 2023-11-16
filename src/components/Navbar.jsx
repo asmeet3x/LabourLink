@@ -82,7 +82,7 @@ function ResponsiveAppBar({ isLogin, setIsLogin }) {
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
                 onClick={handleOpenNavMenu}
-                color="inherit"
+                color="black"
               >
                 <MenuIcon />
               </IconButton>
@@ -111,8 +111,7 @@ function ResponsiveAppBar({ isLogin, setIsLogin }) {
                 ))}
               </Menu>
             </Box>
-            <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
-
+            
             <Typography
               variant="h5"
               noWrap
@@ -124,12 +123,11 @@ function ResponsiveAppBar({ isLogin, setIsLogin }) {
                 flexGrow: 1,
                 fontFamily: 'monospace',
                 fontWeight: 700,
-                letterSpacing: '.3rem',
                 color: 'inherit',
                 textDecoration: 'none',
               }}
             >
-              LOGO
+              <p style={{color:'black'}}>⠀LabourLink</p>
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
@@ -216,4 +214,3 @@ function ResponsiveAppBar({ isLogin, setIsLogin }) {
 }
 
 export default ResponsiveAppBar;
-
